@@ -1,6 +1,6 @@
 {
-  "name": "abs-fetch",
-  "private": true,
+  "name": "recalljs",
+  "private": false,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -11,10 +11,10 @@
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "typescript": "^4.5.4",
-    "vite": "^2.8.0"
+    "vite": "^2.8.0",
+    "jest": "^27.5.1"
   },
   "dependencies": {
-    "jest": "^27.5.1",
     "rxjs": "^7.5.5"
   }
 }

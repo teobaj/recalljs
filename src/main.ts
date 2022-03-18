@@ -1,22 +1,13 @@
-import { useFetch, useSubscription } from "./client";
+import { recall } from "./client";
 
-const fetchTodo = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/todos', {
-    method: "POST",
-    body: JSON.stringify("HI")
-  })
-  return res.json();
-} 
+// const main = async () => {
+//   recall( 'https://jsonplaceholder.typicode.com/todos').subscribe(value => console.log(value))
+//   setTimeout(() => {
+//   recall('https://jsonplaceholder.typicode.com/todos').subscribe(value => console.log(value))
+//   }, 3000)
+// }
 
-
-const main = async () => {
-  useFetch('todo', 'https://jsonplaceholder.typicode.com/todos').subscribe(value => console.log(value))
-  setTimeout(() => {
-  useFetch('todo', 'https://jsonplaceholder.typicode.com/todos').subscribe(value => console.log(value))
-  }, 3000)
-}
-
-main()
+// main()
 
 
-export {useFetch}
+export {recall}
